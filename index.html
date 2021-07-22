@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Forms</title>
+  </head>
+
+  <body>
+    <h1>Donut Selection</h1>
+
+    <p>
+      Choose the type of donut(s) you would like then select the "purchase
+      donuts" button.
+    </p>
+
+    <form action="http://example.com/donut" method="post">
+      <p>
+        <input type="checkbox" name="flavor" id="choc" value="chocolate" />
+        <label for="choc">Chocolate</label><br />
+        <input type="checkbox" name="flavor" id="cream" value="cream" />
+        <label for="cream">Cream Filled</label><br />
+        <input type="checkbox" name="flavor" id="honey" value="honey" />
+        <label for="honey">Honey Glazed</label><br />
+        <input type="submit" value="Purchase Donuts" />
+      </p>
+    </form>
+    <h1>Enter Name</h1>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" />
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" />
+    <h1>Computer Skills</h1>
+    <input
+      type="checkbox"
+      id="markuplang"
+      name="computerskills"
+      checked="checked"
+    />
+    <label for="markuplang">HTML</label>
+    <input
+      type="checkbox"
+      id="markuplangstyle"
+      name="computerskills"
+      checked="checked"
+    />
+    <label for="markuplangstyle">CSS</label>
+  </body>
+</html>
